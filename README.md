@@ -4,8 +4,8 @@ A desktop application that implements the Pomodoro Technique, a time management 
 
 ## Features
 
-- **Work Sessions**: 1-minute focused work periods (customizable)
-- **Short Breaks**: 1-minute breaks between work sessions (customizable)
+- **Work Sessions**: 25-minute focused work periods (customizable)
+- **Short Breaks**: 5-minute breaks between work sessions (customizable)
 - **Long Breaks**: 20-minute breaks after every 4 work sessions (customizable)
 - **Visual Feedback**: 
   - Tomato icon displayed during timer
@@ -42,12 +42,12 @@ A desktop application that implements the Pomodoro Technique, a time management 
 ## How It Works
 
 The Pomodoro cycle follows this pattern:
-- **Session 1**: 1 minute work
-- **Session 2**: 1 minute short break
-- **Session 3**: 1 minute work
-- **Session 4**: 1 minute short break
+- **Session 1**: 25 minute work
+- **Session 2**: 5 minute short break
+- **Session 3**: 25 minute work
+- **Session 4**: 5 minute short break
 - ... (repeats)
-- **Session 8**: 1 minute work
+- **Session 8**: 25 minute work
 - **Session 9**: 20 minute long break (then cycle restarts)
 
 Each completed work session is marked with a checkmark (✔).
@@ -57,15 +57,10 @@ Each completed work session is marked with a checkmark (✔).
 You can modify the timer durations by editing the constants at the top of `main.py`:
 
 ```python
-WORK_MIN = 1              # Work session duration in minutes
-SHORT_BREAK_MIN = 1       # Short break duration in minutes
+WORK_MIN = 25              # Work session duration in minutes
+SHORT_BREAK_MIN = 5       # Short break duration in minutes
 LONG_BREAK_MIN = 20       # Long break duration in minutes
 ```
-
-For a real Pomodoro experience, use:
-- `WORK_MIN = 25`
-- `SHORT_BREAK_MIN = 5`
-- `LONG_BREAK_MIN = 15`
 
 ## Color Legend
 
@@ -82,3 +77,4 @@ For a real Pomodoro experience, use:
 ## Author
 
 Created as part of the "100 Days of Code - The Complete Python Pro Bootcamp" course (Day 28)
+
